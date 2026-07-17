@@ -81,23 +81,49 @@ placeholder="Search anything...">
 
 </div>
 
-<div class="profile">
+<!-- ================= EDITABLE PROFILE ================= -->
 
-<img src="https://i.pravatar.cc/100?img=12">
+<div class="profile" id="profileBox">
+
+<img src="https://i.pravatar.cc/100?img=12" id="profileImg">
 
 <div>
 
-<h4>Niveditha</h4>
+<h4 id="profileName">Niveditha</h4>
 
-<p>S7 Computer Science</p>
+<p id="profileInfo">S7 Computer Science</p>
 
 </div>
+
+<i class="fa-solid fa-pen" id="editProfileBtn" style="margin-left:10px; cursor:pointer; font-size:12px; opacity:.6;"></i>
 
 </div>
 
 </div>
 
 </header>
+
+<!-- ================= PROFILE EDIT MODAL ================= -->
+
+<div id="profileModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.6); z-index:999; align-items:center; justify-content:center;">
+  <div style="background:#111827; padding:30px; border-radius:16px; width:320px; color:white;">
+    <h3 style="margin-bottom:20px;">Edit Profile</h3>
+
+    <label>Name</label>
+    <input id="editName" style="width:100%; padding:10px; margin:8px 0 16px; border-radius:8px; border:none;">
+
+    <label>Info (e.g. semester/dept)</label>
+    <input id="editInfo" style="width:100%; padding:10px; margin:8px 0 16px; border-radius:8px; border:none;">
+
+    <label>Photo URL</label>
+    <input id="editImg" style="width:100%; padding:10px; margin:8px 0 20px; border-radius:8px; border:none;">
+
+    <div style="display:flex; gap:10px;">
+      <button id="saveProfileBtn" style="flex:1; padding:10px; border:none; border-radius:8px; background:#7C3AED; color:white; cursor:pointer;">Save</button>
+      <button id="cancelProfileBtn" style="flex:1; padding:10px; border:none; border-radius:8px; background:#374151; color:white; cursor:pointer;">Cancel</button>
+    </div>
+  </div>
+</div>
 
 <!-- ================= HERO ================= -->
 
@@ -691,6 +717,47 @@ Fee Payment Reminder
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script src="dashboard.js"></script>
+
+<script>
+
+  const profileName = document.getElementById("profileName");
+  const profileInfo = document.getElementById("profileInfo");
+  const profileImg = document.getElementById("profileImg");
+  const profileModal = document.getElementById("profileModal");
+
+  // Load saved profile (if any) on page load
+  window.addEventListener("DOMContentLoaded", () => {
+    const saved = JSON.parse(localStorage.getItem("profile") || "{}");
+    if (saved.name) profileName.textContent = saved.name;
+    if (saved.info) profileInfo.textContent = saved.info;
+    if (saved.img) profileImg.src = saved.img;
+  });
+
+  document.getElementById("editProfileBtn").addEventListener("click", () => {
+    document.getElementById("editName").value = profileName.textContent;
+    document.getElementById("editInfo").value = profileInfo.textContent;
+    document.getElementById("editImg").value = profileImg.src;
+    profileModal.style.display = "flex";
+  });
+
+  document.getElementById("cancelProfileBtn").addEventListener("click", () => {
+    profileModal.style.display = "none";
+  });
+
+  document.getElementById("saveProfileBtn").addEventListener("click", () => {
+    const name = document.getElementById("editName").value.trim();
+    const info = document.getElementById("editInfo").value.trim();
+    const img = document.getElementById("editImg").value.trim();
+
+    if (name) profileName.textContent = name;
+    if (info) profileInfo.textContent = info;
+    if (img) profileImg.src = img;
+
+    localStorage.setItem("profile", JSON.stringify({ name, info, img }));
+    profileModal.style.display = "none";
+  });
+
+</script>
 
 </body>
 
