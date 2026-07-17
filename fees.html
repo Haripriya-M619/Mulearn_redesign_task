@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fees & Payments | KTU Student Portal</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="fees.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<!--================== AURORA ==================-->
+
+<div class="aurora">
+
+<div class="blob b1"></div>
+
+<div class="blob b2"></div>
+
+<div class="blob b3"></div>
+
+</div>
+
+<div class="container">
+
+<!--================== HEADER ==================-->
+
+<header>
+
+<div class="logo">
+
+<a href="dashboard.html" class="back-btn">← Back</a>
+
+<div>
+
+<h2>Fees & Payments</h2>
+
+<p>Track tuition fees, payments and financial records</p>
+
+</div>
+
+</div>
+
+<div class="profile">
+
+<img src="https://i.pravatar.cc/100?img=32">
+
+<div>
+
+<h4>Niveditha Saji</h4>
+
+<p>S7 Computer Science Engineering</p>
+
+</div>
+
+</div>
+
+</header>
+
+<!--================== HERO ==================-->
+
+<section class="hero">
+
+<div class="hero-card glass">
+
+<h1>Total Fees Paid</h1>
+
+<h2 id="totalPaid">₹4,25,000</h2>
+
+<p>
+
+Overall payment completion across all academic years.
+
+</p>
+
+<div class="progress-bar">
+
+<div class="progress-fill"></div>
+
+</div>
+
+<span>89% Completed</span>
+
+</div>
+
+<div class="hero-card glass due">
+
+<h1>Current Semester Due</h1>
+
+<h2>₹18,000</h2>
+
+<p>Due Date : 15 August 2026</p>
+
+<button class="pay-btn">
+
+Pay Now
+
+</button>
+
+</div>
+
+</section>
+
+<!--================== SUMMARY ==================-->
+
+<section class="stats">
+
+<div class="stat purple">
+
+<h2>₹4.25L</h2>
+
+<p>Total Paid</p>
+
+</div>
+
+<div class="stat blue">
+
+<h2>₹18K</h2>
+
+<p>Current Due</p>
+
+</div>
+
+<div class="stat green">
+
+<h2>Paid ✓</h2>
+
+<p>Hostel Fee</p>
+
+</div>
+
+<div class="stat orange">
+
+<h2>Not Opted</h2>
+
+<p>Bus Facility</p>
+
+</div>
+
+</section>
+
+<!--================== SUBJECT WISE FEES ==================-->
+
+<section class="card">
+
+<div class="card-header">
+
+<h2>Current Semester Subject-wise Fees</h2>
+
+</div>
+
+<table class="fee-table">
+
+<tr>
+
+<th>Subject</th>
+
+<th>Fee</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>Artificial Intelligence</td>
+
+<td>₹3,500</td>
+
+<td><span class="paid">Paid</span></td>
+
+</tr>
+
+<tr>
+
+<td>Cloud Computing</td>
+
+<td>₹3,000</td>
+
+<td><span class="paid">Paid</span></td>
+
+</tr>
+
+<tr>
+
+<td>IoT & Applications</td>
+
+<td>₹2,500</td>
+
+<td><span class="paid">Paid</span></td>
+
+</tr>
+
+<tr>
+
+<td>Industrial Safety Engineering</td>
+
+<td>₹2,000</td>
+
+<td><span class="pending">Pending</span></td>
+
+</tr>
+
+<tr>
+
+<td>Seminar</td>
+
+<td>₹1,500</td>
+
+<td><span class="pending">Pending</span></td>
+
+</tr>
+
+<tr>
+
+<td>Major Project</td>
+
+<td>₹5,500</td>
+
+<td><span class="pending">Pending</span></td>
+
+</tr>
+
+<tr>
+
+<td>Lab Fee</td>
+
+<td>₹1,000</td>
+
+<td><span class="paid">Paid</span></td>
+
+</tr>
+
+<tr>
+
+<td>Library Fee</td>
+
+<td>₹500</td>
+
+<td><span class="paid">Paid</span></td>
+
+</tr>
+
+</table>
+
+</section>
+
+<!--================== GRID ==================-->
+
+<section class="dashboard-grid">
+
+<!-- CURRENT SEMESTER BREAKDOWN -->
+
+<div class="card">
+
+<div class="card-header">
+
+<h2>Current Semester Fee Breakdown</h2>
+
+</div>
+
+<div class="fee-breakdown">
+
+<div>
+
+<span>Tuition Fee</span>
+
+<strong>₹14,000</strong>
+
+</div>
+
+<div>
+
+<span>University Fee</span>
+
+<strong>₹2,000</strong>
+
+</div>
+
+<div>
+
+<span>Exam Registration</span>
+
+<strong>₹2,000</strong>
+
+</div>
+
+<div>
+
+<span>Laboratory Fee</span>
+
+<strong>₹1,000</strong>
+
+</div>
+
+<div>
+
+<span>Library Fee</span>
+
+<strong>₹500</strong>
+
+</div>
+
+<div>
+
+<span>Development Fee</span>
+
+<strong>₹1,500</strong>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PAYMENT ANALYTICS -->
+
+<div class="card">
+
+<div class="card-header">
+
+<h2>Payment Analytics</h2>
+
+</div>
+
+<canvas id="paymentChart"></canvas>
+
+</div>
+
+</section>
+<!--================== PAYMENT HISTORY ==================-->
+
+<section class="card">
+
+<div class="card-header">
+
+<h2>Academic Year Payment History</h2>
+
+</div>
+
+<div class="history">
+
+<div class="history-item">
+
+<div>
+
+<h3>2021 – 2022</h3>
+
+<p>First Year</p>
+
+</div>
+
+<div>
+
+<h4>₹65,000</h4>
+
+<span class="paid">Completed</span>
+
+</div>
+
+</div>
+
+<div class="history-item">
+
+<div>
+
+<h3>2022 – 2023</h3>
+
+<p>Second Year</p>
+
+</div>
+
+<div>
+
+<h4>₹68,000</h4>
+
+<span class="paid">Completed</span>
+
+</div>
+
+</div>
+
+<div class="history-item">
+
+<div>
+
+<h3>2023 – 2024</h3>
+
+<p>Third Year</p>
+
+</div>
+
+<div>
+
+<h4>₹70,000</h4>
+
+<span class="paid">Completed</span>
+
+</div>
+
+</div>
+
+<div class="history-item">
+
+<div>
+
+<h3>2024 – 2025</h3>
+
+<p>Fourth Year (S5-S6)</p>
+
+</div>
+
+<div>
+
+<h4>₹72,000</h4>
+
+<span class="paid">Completed</span>
+
+</div>
+
+</div>
+
+<div class="history-item">
+
+<div>
+
+<h3>2025 – 2026</h3>
+
+<p>Current Academic Year (S7)</p>
+
+</div>
+
+<div>
+
+<h4>₹18,000 / ₹36,000</h4>
+
+<span class="pending">Partially Paid</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================== TRANSACTIONS & RECEIPTS ==================-->
+
+<section class="dashboard-grid">
+
+<!-- RECENT TRANSACTIONS -->
+
+<div class="card">
+
+<div class="card-header">
+
+<h2>Recent Transactions</h2>
+
+</div>
+
+<div class="transactions">
+
+<div class="transaction">
+
+<div>
+
+<h4>Semester Tuition Fee</h4>
+
+<p>05 Jul 2026</p>
+
+</div>
+
+<strong>₹15,000</strong>
+
+</div>
+
+<div class="transaction">
+
+<div>
+
+<h4>Exam Registration</h4>
+
+<p>12 Jul 2026</p>
+
+</div>
+
+<strong>₹2,000</strong>
+
+</div>
+
+<div class="transaction">
+
+<div>
+
+<h4>Library Fee</h4>
+
+<p>15 Jul 2026</p>
+
+</div>
+
+<strong>₹500</strong>
+
+</div>
+
+<div class="transaction">
+
+<div>
+
+<h4>Hostel Fee</h4>
+
+<p>20 Jul 2026</p>
+
+</div>
+
+<strong>₹40,000</strong>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PAYMENT TREND -->
+
+<div class="card">
+
+<div class="card-header">
+
+<h2>Yearly Payment Trend</h2>
+
+</div>
+
+<canvas id="trendChart"></canvas>
+
+</div>
+
+</section>
+
+<!--================== RECEIPTS ==================-->
+
+<section class="card">
+
+<div class="card-header">
+
+<h2>Download Receipts</h2>
+
+</div>
+
+<div class="receipt-grid">
+
+<div class="receipt-card">
+
+<div class="receipt-icon">📄</div>
+
+<h3>Semester Fee Receipt</h3>
+
+<p>Download latest semester fee receipt.</p>
+
+<button>Download PDF</button>
+
+</div>
+
+<div class="receipt-card">
+
+<div class="receipt-icon">🏠</div>
+
+<h3>Hostel Fee Receipt</h3>
+
+<p>View hostel payment receipt.</p>
+
+<button>Download PDF</button>
+
+</div>
+
+<div class="receipt-card">
+
+<div class="receipt-icon">📊</div>
+
+<h3>Complete Fee Statement</h3>
+
+<p>Academic year-wise fee statement.</p>
+
+<button>Download PDF</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================== FINANCIAL SUMMARY ==================-->
+
+<section class="card">
+
+<div class="card-header">
+
+<h2>Financial Summary</h2>
+
+</div>
+
+<div class="summary-grid">
+
+<div class="summary-box">
+
+<h4>Total Fees Paid</h4>
+
+<h2>₹4,25,000</h2>
+
+</div>
+
+<div class="summary-box">
+
+<h4>Outstanding Balance</h4>
+
+<h2>₹18,000</h2>
+
+</div>
+
+<div class="summary-box">
+
+<h4>Scholarship</h4>
+
+<h2>₹15,000</h2>
+
+</div>
+
+<div class="summary-box">
+
+<h4>Payment Completion</h4>
+
+<h2>89%</h2>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 KTU Student Portal • Fees & Payments Dashboard
+
+</footer>
+
+<script src="fees.js"></script>
+
+</body>
+
+</html>

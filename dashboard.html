@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KTU Student Portal</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+<link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+<body>
+
+<!-- Animated Background -->
+
+<div class="aurora">
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+<div class="blob b3"></div>
+</div>
+
+<div class="container">
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<div class="logo">
+
+<div class="logo-box">
+
+🎓
+
+</div>
+
+<div>
+
+<h2>KTU Student Portal</h2>
+
+<p>Student Workspace</p>
+
+</div>
+
+</div>
+
+<div class="search">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+placeholder="Search anything...">
+
+</div>
+
+<div class="nav-right">
+
+<button class="theme-btn">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+<div class="notification">
+
+<i class="fa-regular fa-bell"></i>
+
+<span>4</span>
+
+</div>
+
+<div class="profile">
+
+<img src="https://i.pravatar.cc/100?img=12">
+
+<div>
+
+<h4>Niveditha</h4>
+
+<p>S7 Computer Science</p>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>
+
+Good Morning,
+
+<span>Niveditha 👋</span>
+
+</h1>
+
+<p>
+
+Everything you need for your semester,
+beautifully organized in one place.
+
+</p>
+
+<div class="hero-buttons">
+
+<button class="primary">
+
+Open Dashboard
+
+</button>
+
+<button class="secondary">
+
+Today's Classes
+
+</button>
+
+</div>
+
+</div>
+
+<div class="hero-info">
+
+<div class="glass">
+
+<h4>Current Semester</h4>
+
+<h1>S7</h1>
+
+<p>Computer Science & Engineering</p>
+
+</div>
+
+<div class="glass">
+
+<h4>Next Class</h4>
+
+<h2>Compiler Design</h2>
+
+<p>Starts in 18 Minutes</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+<div class="stat purple">
+
+<h2>9.18</h2>
+
+<p>CGPA</p>
+
+</div>
+
+<div class="stat blue">
+
+<h2>94%</h2>
+
+<p>Attendance</p>
+
+</div>
+
+<div class="stat green">
+
+<h2>138</h2>
+
+<p>Credits</p>
+
+</div>
+
+<div class="stat orange">
+
+<h2>27</h2>
+
+<p>University Rank</p>
+
+</div>
+
+</section>
+
+<!-- ================= BENTO GRID STARTS ================= -->
+
+<section class="dashboard-grid">
+
+<!-- Large Card -->
+
+<div class="card large">
+
+<div class="card-header">
+
+<h2>
+
+Quick Access
+
+</h2>
+
+<a href="#">
+
+View All
+
+</a>
+
+</div>
+
+<div class="quick-grid">
+
+<a href="attendance.html">
+
+<img src="attendance.svg" alt="Attendance" onerror="this.src='attendence.svg'">
+
+<span>Attendance</span>
+
+</a>
+
+<a href="courses.html">
+
+<img src="assets/courses.svg" alt="Courses" onerror="this.src='courses.svg'">
+
+<span>Courses</span>
+
+</a>
+
+<a href="assignments.html">
+
+<img src="assets/assignment.svg" alt="Assignments" onerror="this.src='assignments.svg'">
+
+<span>Assignments</span>
+
+</a>
+
+<a href="results.html">
+
+<img src="assets/results.svg" alt="Results" onerror="this.src='results.svg'">
+
+<span>Results</span>
+
+</a>
+
+<a href="fees.html">
+
+<img src="assets/fees.svg" alt="Fees" onerror="this.src='fees.svg'">
+
+<span>Fees</span>
+
+</a>
+
+<a href="timetable.html">
+
+<img src="assets/timetable.svg" alt="Timetable" onerror="this.src='timetable.svg'">
+
+<span>Timetable</span>
+
+</a>
+
+</div>
+
+</div>
+
+<!-- Attendance Ring -->
+
+<div class="card attendance-card">
+
+<h3>
+
+Attendance
+
+</h3>
+
+<svg width="170" height="170">
+
+<circle
+cx="85"
+cy="85"
+r="70"
+class="track"/>
+
+<circle
+cx="85"
+cy="85"
+r="70"
+class="progress"/>
+
+<text
+x="50%"
+y="50%"
+text-anchor="middle"
+dy=".3em">
+
+94%
+
+</text>
+
+</svg>
+
+<p>
+
+Excellent Attendance
+
+</p>
+
+</div>
+
+<!-- Today's Schedule -->
+
+<div class="card schedule-card">
+
+<h2>
+
+Today's Schedule
+
+</h2>
+
+<div class="timeline">
+
+<div>
+
+<span>08:30</span>
+
+<h4>Compiler Design</h4>
+
+</div>
+
+<div>
+
+<span>10:30</span>
+
+<h4>Operating Systems</h4>
+
+</div>
+
+<div>
+
+<span>02:00</span>
+
+<h4>Mini Project</h4>
+
+</div>
+
+<div>
+
+<span>03:30</span>
+
+<h4>Artificial Intelligence</h4>
+
+</div>
+
+</div>
+
+</div>
+<!-- ================= AI ASSISTANT ================= -->
+
+<div class="card ai-card">
+
+    <div class="card-header">
+
+        <h2>
+            🤖 AI Assistant
+        </h2>
+
+    </div>
+
+    <div class="ai-body">
+
+        <div class="ai-avatar">
+            🤖
+        </div>
+
+        <div>
+
+            <h3>Hello Niveditha!</h3>
+
+            <p>
+
+                You have 2 assignments due this week.
+                Your attendance is above 90%.
+                You're doing great!
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <button class="ai-button">
+
+        Ask AI
+
+    </button>
+
+</div>
+
+<!-- ================= MINI CALENDAR ================= -->
+
+<div class="card calendar-card">
+
+<h2>
+
+July 2026
+
+</h2>
+
+<div class="weekdays">
+
+<span>M</span>
+<span>T</span>
+<span>W</span>
+<span>T</span>
+<span>F</span>
+<span>S</span>
+<span>S</span>
+
+</div>
+
+<div class="calendar">
+
+<span></span>
+<span></span>
+
+<span>1</span>
+<span>2</span>
+<span>3</span>
+<span>4</span>
+<span>5</span>
+
+<span>6</span>
+<span>7</span>
+<span>8</span>
+<span>9</span>
+<span>10</span>
+<span>11</span>
+<span>12</span>
+
+<span>13</span>
+<span>14</span>
+
+<span class="today">
+15
+</span>
+
+<span>16</span>
+
+<span class="event">
+17
+</span>
+
+<span>18</span>
+
+<span>19</span>
+
+<span>20</span>
+
+<span>21</span>
+
+<span class="exam">
+22
+</span>
+
+<span>23</span>
+
+<span>24</span>
+
+<span>25</span>
+
+<span>26</span>
+
+<span>27</span>
+
+<span>28</span>
+
+<span>29</span>
+
+<span>30</span>
+
+<span>31</span>
+
+</div>
+
+</div>
+
+<!-- ================= ATTENDANCE HEATMAP ================= -->
+
+<div class="card heatmap-card">
+
+<h2>
+
+Attendance Heatmap
+
+</h2>
+
+<div class="heatmap">
+
+<div class="g4"></div>
+<div class="g4"></div>
+<div class="g3"></div>
+<div class="g4"></div>
+<div class="g4"></div>
+<div class="g2"></div>
+<div class="g4"></div>
+
+<div class="g3"></div>
+<div class="g4"></div>
+<div class="g4"></div>
+<div class="g1"></div>
+<div class="g4"></div>
+<div class="g4"></div>
+<div class="g3"></div>
+
+<div class="g4"></div>
+<div class="g4"></div>
+<div class="g3"></div>
+<div class="g4"></div>
+<div class="g4"></div>
+<div class="g2"></div>
+<div class="g4"></div>
+
+<div class="g4"></div>
+<div class="g4"></div>
+<div class="g4"></div>
+<div class="g3"></div>
+<div class="g4"></div>
+<div class="g4"></div>
+<div class="g4"></div>
+
+</div>
+
+<p>
+
+🟢 Present
+&nbsp;&nbsp;
+🟡 Leave
+&nbsp;&nbsp;
+⚪ Holiday
+
+</p>
+
+</div>
+
+<!-- ================= PERFORMANCE CHART ================= -->
+
+<div class="card chart-card">
+
+<div class="card-header">
+
+<h2>
+
+Performance Analytics
+
+</h2>
+
+</div>
+
+<canvas id="performanceChart"></canvas>
+
+</div>
+
+<!-- ================= NOTIFICATIONS ================= -->
+
+<div class="card notification-card">
+
+<div class="card-header">
+
+<h2>
+
+Notifications
+
+</h2>
+
+</div>
+
+<div class="notice">
+
+<div class="notice-dot purple-dot"></div>
+
+<div>
+
+<h4>
+
+Compiler Assignment Uploaded
+
+</h4>
+
+<p>
+
+Today • 10:30 AM
+
+</p>
+
+</div>
+
+</div>
+
+<div class="notice">
+
+<div class="notice-dot blue-dot"></div>
+
+<div>
+
+<h4>
+
+Hall Ticket Released
+
+</h4>
+
+<p>
+
+Yesterday
+
+</p>
+
+</div>
+
+</div>
+
+<div class="notice">
+
+<div class="notice-dot green-dot"></div>
+
+<div>
+
+<h4>
+
+Placement Registration Open
+
+</h4>
+
+<p>
+
+2 Days Ago
+
+</p>
+
+</div>
+
+</div>
+
+<div class="notice">
+
+<div class="notice-dot orange-dot"></div>
+
+<div>
+
+<h4>
+
+Fee Payment Reminder
+
+</h4>
+
+<p>
+
+25 July
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+
+</footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>

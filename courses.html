@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Courses</title>
+
+<link rel="stylesheet" href="courses.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<!-- Aurora Background -->
+
+<div class="aurora">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+</div>
+
+<div class="container">
+
+<!-- Header -->
+
+<header>
+
+<div class="left-header">
+
+<a href="dashboard.html" class="back-btn">
+<i class="fa-solid fa-arrow-left"></i>
+</a>
+
+<div>
+<h1>My Courses</h1>
+<p>Semester 7 • 6 Active Courses</p>
+</div>
+
+</div>
+
+<div class="date-box">
+<i class="fa-solid fa-book-open"></i>
+<span>Academic Progress</span>
+</div>
+
+</header>
+
+<!-- Hero Card -->
+
+<section class="hero-card glass">
+
+<div class="hero-left">
+
+<h2>Overall Course Progress</h2>
+
+<div class="progress-circle">
+
+<svg width="210" height="210">
+
+<circle
+class="track"
+cx="105"
+cy="105"
+r="78">
+</circle>
+
+<circle
+class="progress"
+cx="105"
+cy="105"
+r="78">
+</circle>
+
+</svg>
+
+<div class="circle-content">
+
+<h1 id="overallProgress">74%</h1>
+
+<p>Semester Progress</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="hero-stat">
+
+<h2>6</h2>
+
+<p>Active Courses</p>
+
+</div>
+
+<div class="hero-stat">
+
+<h2>22</h2>
+
+<p>Total Credits</p>
+
+</div>
+
+<div class="hero-stat">
+
+<h2>74%</h2>
+
+<p>Overall Completion</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Courses -->
+
+<section class="courses-grid">
+
+<!-- Major Project -->
+
+<div class="course-card glass">
+
+<div class="course-top">
+
+<div class="icon project">
+
+<i class="fa-solid fa-rocket"></i>
+
+</div>
+
+<div>
+
+<h2>Major Project</h2>
+
+<p>AI Network Intrusion Detection System</p>
+
+</div>
+
+</div>
+
+<div class="progress-title">
+
+<span>Progress</span>
+
+<span class="badge">82%</span>
+
+</div>
+
+<div class="progress-bar">
+
+<div class="fill project-fill" style="width:82%;"></div>
+
+</div>
+
+<div class="course-info">
+
+<span><i class="fa-solid fa-user"></i> Dr. Arun</span>
+
+<span><i class="fa-solid fa-graduation-cap"></i> 6 Credits</span>
+
+</div>
+
+<button class="open-btn">
+
+Open Course
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</button>
+
+</div>
+
+<!-- Artificial Intelligence -->
+
+<div class="course-card glass">
+
+<div class="course-top">
+
+<div class="icon ai">
+
+<i class="fa-solid fa-robot"></i>
+
+</div>
+
+<div>
+
+<h2>Artificial Intelligence</h2>
+
+<p>Machine Learning & AI Concepts</p>
+
+</div>
+
+</div>
+
+<div class="progress-title">
+
+<span>Progress</span>
+
+<span class="badge">68%</span>
+
+</div>
+
+<div class="progress-bar">
+
+<div class="fill ai-fill" style="width:68%;"></div>
+
+</div>
+
+<div class="course-info">
+
+<span><i class="fa-solid fa-user"></i> Dr. Neethu</span>
+
+<span><i class="fa-solid fa-graduation-cap"></i> 4 Credits</span>
+
+</div>
+
+</div>
+
+<!-- Cloud Computing -->
+
+<div class="course-card glass">
+
+<div class="course-top">
+
+<div class="icon cloud">
+
+<i class="fa-solid fa-cloud"></i>
+
+</div>
+
+<div>
+
+<h2>Cloud Computing</h2>
+
+<p>AWS, Azure & Virtualization</p>
+
+</div>
+
+</div>
+
+<div class="progress-title">
+
+<span>Progress</span>
+
+<span class="badge">74%</span>
+
+</div>
+
+<div class="progress-bar">
+
+<div class="fill cloud-fill" style="width:74%;"></div>
+
+</div>
+
+<div class="course-info">
+
+<span><i class="fa-solid fa-user"></i> Dr. Reshma</span>
+
+<span><i class="fa-solid fa-graduation-cap"></i> 4 Credits</span>
+
+</div>
+
+</div>
+<!-- IoT & Applications -->
+
+<div class="course-card glass">
+
+    <div class="course-top">
+
+        <div class="icon iot">
+            <i class="fa-solid fa-network-wired"></i>
+        </div>
+
+        <div>
+            <h2>IoT & Applications</h2>
+            <p>Smart Devices & Embedded Systems</p>
+        </div>
+
+    </div>
+
+    <div class="progress-title">
+        <span>Progress</span>
+        <span class="badge">60%</span>
+    </div>
+
+    <div class="progress-bar">
+        <div class="fill iot-fill" style="width:60%;"></div>
+    </div>
+
+    <div class="course-info">
+        <span><i class="fa-solid fa-user"></i> Dr. Suresh</span>
+        <span><i class="fa-solid fa-graduation-cap"></i> 3 Credits</span>
+    </div>
+
+</div>
+
+<!-- Industrial Safety Engineering -->
+
+<div class="course-card glass">
+
+    <div class="course-top">
+
+        <div class="icon safety">
+            <i class="fa-solid fa-shield-halved"></i>
+        </div>
+
+        <div>
+            <h2>Industrial Safety Engineering</h2>
+            <p>Safety Standards & Risk Management</p>
+        </div>
+
+    </div>
+
+    <div class="progress-title">
+        <span>Progress</span>
+        <span class="badge">96%</span>
+    </div>
+
+    <div class="progress-bar">
+        <div class="fill safety-fill" style="width:96%;"></div>
+    </div>
+
+    <div class="course-info">
+        <span><i class="fa-solid fa-user"></i> Dr. Deepa</span>
+        <span><i class="fa-solid fa-graduation-cap"></i> 3 Credits</span>
+    </div>
+
+</div>
+
+<!-- Seminar -->
+
+<div class="course-card glass">
+
+    <div class="course-top">
+
+        <div class="icon seminar">
+            <i class="fa-solid fa-person-chalkboard"></i>
+        </div>
+
+        <div>
+            <h2>Seminar</h2>
+            <p>Research Presentation & Technical Talk</p>
+        </div>
+
+    </div>
+
+    <div class="progress-title">
+        <span>Progress</span>
+        <span class="badge">80%</span>
+    </div>
+
+    <div class="progress-bar">
+        <div class="fill seminar-fill" style="width:80%;"></div>
+    </div>
+
+    <div class="course-info">
+        <span><i class="fa-solid fa-user"></i> Dr. Priya</span>
+        <span><i class="fa-solid fa-graduation-cap"></i> 2 Credits</span>
+    </div>
+
+    <div class="presentation-date">
+
+        <i class="fa-solid fa-calendar-days"></i>
+
+        <span>Presentation : 25 July</span>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- Course Completion Chart -->
+
+<section class="chart-section">
+
+    <div class="glass chart-card">
+
+        <div class="chart-header">
+
+            <h2>Course Completion Overview</h2>
+
+            <p>Current completion percentage of all enrolled courses</p>
+
+        </div>
+
+        <div class="chart-container">
+
+            <canvas id="courseChart"></canvas>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+
+        © 2026 EduSphere |
+        Learning Dashboard
+
+    </p>
+
+</footer>
+
+</div>
+
+<script src="courses.js"></script>
+
+</body>
+
+</html>

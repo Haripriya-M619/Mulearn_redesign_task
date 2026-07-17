@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Results | KTU Student Portal</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="results.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="aurora">
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+<div class="blob b3"></div>
+</div>
+
+<div class="container">
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="logo">
+
+<a href="dashboard.html" class="back-btn">
+
+← Back
+
+</a>
+
+<div>
+
+<h2>Academic Results</h2>
+
+<p>Track your complete academic performance</p>
+
+</div>
+
+</div>
+
+<div class="header-right">
+
+<div class="search">
+
+<input type="text" placeholder="Search Semester">
+
+</div>
+
+<div class="profile">
+
+<img src="https://i.pravatar.cc/100?img=32">
+
+<div>
+
+<h4>Niveditha Saji</h4>
+
+<p>S7 Computer Science</p>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-left glass">
+
+<h1>
+
+Academic
+
+<span>Performance</span>
+
+</h1>
+
+<p>
+
+Monitor your university examination results, internal assessments,
+series examinations, semester performance and overall academic growth
+through interactive analytics.
+
+</p>
+
+<div class="hero-buttons">
+
+<button class="primary">
+
+Download Transcript
+
+</button>
+
+<button class="secondary">
+
+View Analytics
+
+</button>
+
+</div>
+
+</div>
+
+<div class="hero-right glass">
+
+<svg width="220" height="220">
+
+<circle
+class="track"
+cx="110"
+cy="110"
+r="80"/>
+
+<circle
+class="progress"
+cx="110"
+cy="110"
+r="80"/>
+
+<text
+x="110"
+y="118"
+text-anchor="middle">
+
+8.12
+
+</text>
+
+</svg>
+
+<h3>Overall CGPA</h3>
+
+<p>Excellent Academic Standing</p>
+
+</div>
+
+</section>
+
+<!-- ================= QUICK STATS ================= -->
+
+<section class="stats">
+
+<div class="stat purple">
+
+<h2>8.35</h2>
+
+<p>Current SGPA</p>
+
+</div>
+
+<div class="stat blue">
+
+<h2>8.12</h2>
+
+<p>Overall CGPA</p>
+
+</div>
+
+<div class="stat green">
+
+<h2>86%</h2>
+
+<p>Assessment Average</p>
+
+</div>
+
+<div class="stat orange">
+
+<h2>82%</h2>
+
+<p>Series Average</p>
+
+</div>
+
+</section>
+
+<!-- ================= GRID ================= -->
+
+<section class="dashboard-grid">
+
+<!-- UNIVERSITY RESULTS -->
+
+<div class="card">
+
+<div class="card-header">
+
+<h2>University Examination Results</h2>
+
+<a href="#">View Marksheet</a>
+
+</div>
+
+<div class="semester-list">
+
+<div class="semester">
+
+<div>
+
+<h3>Semester 1</h3>
+
+<p>University Examination</p>
+
+</div>
+
+<div class="sgpa">
+
+7.80
+
+</div>
+
+<span class="pass">
+
+Passed
+
+</span>
+
+</div>
+
+<div class="semester">
+
+<div>
+
+<h3>Semester 2</h3>
+
+<p>University Examination</p>
+
+</div>
+
+<div class="sgpa">
+
+8.04
+
+</div>
+
+<span class="pass">
+
+Passed
+
+</span>
+
+</div>
+
+<div class="semester">
+
+<div>
+
+<h3>Semester 3</h3>
+
+<p>University Examination</p>
+
+</div>
+
+<div class="sgpa">
+
+7.92
+
+</div>
+
+<span class="pass">
+
+Passed
+
+</span>
+
+</div>
+
+<div class="semester">
+
+<div>
+
+<h3>Semester 4</h3>
+
+<p>University Examination</p>
+
+</div>
+
+<div class="sgpa">
+
+8.30
+
+</div>
+
+<span class="pass">
+
+Passed
+
+</span>
+
+</div>
+
+<div class="semester">
+
+<div>
+
+<h3>Semester 5</h3>
+
+<p>University Examination</p>
+
+</div>
+
+<div class="sgpa">
+
+8.42
+
+</div>
+
+<span class="pass">
+
+Passed
+
+</span>
+
+</div>
+
+<div class="semester">
+
+<div>
+
+<h3>Semester 6</h3>
+
+<p>University Examination</p>
+
+</div>
+
+<div class="sgpa">
+
+8.35
+
+</div>
+
+<span class="pass">
+
+Passed
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+<!-- ================= INTERNAL ASSESSMENT ================= -->
+
+<div class="card">
+
+<div class="card-header">
+
+<h2>Internal Assessment</h2>
+
+</div>
+
+<div class="subject-progress">
+
+<div class="subject">
+
+<div class="subject-head">
+
+<h4>Artificial Intelligence</h4>
+
+<span>92%</span>
+
+</div>
+
+<div class="bar">
+
+<div class="fill purple-fill" style="width:92%"></div>
+
+</div>
+
+</div>
+
+<div class="subject">
+
+<div class="subject-head">
+
+<h4>Cloud Computing</h4>
+
+<span>90%</span>
+
+</div>
+
+<div class="bar">
+
+<div class="fill blue-fill" style="width:90%"></div>
+
+</div>
+
+</div>
+
+<div class="subject">
+
+<div class="subject-head">
+
+<h4>Industrial Safety Engineering</h4>
+
+<span>95%</span>
+
+</div>
+
+<div class="bar">
+
+<div class="fill green-fill" style="width:95%"></div>
+
+</div>
+
+</div>
+
+<div class="subject">
+
+<div class="subject-head">
+
+<h4>Seminar</h4>
+
+<span>96%</span>
+
+</div>
+
+<div class="bar">
+
+<div class="fill orange-fill" style="width:96%"></div>
+
+</div>
+
+</div>
+
+<div class="subject">
+
+<div class="subject-head">
+
+<h4>Major Project</h4>
+
+<span>94%</span>
+
+</div>
+
+<div class="bar">
+
+<div class="fill purple-fill" style="width:94%"></div>
+
+</div>
+
+</div>
+
+<div class="subject">
+
+<div class="subject-head">
+
+<h4>IoT & Applications</h4>
+
+<span>88%</span>
+
+</div>
+
+<div class="bar">
+
+<div class="fill blue-fill" style="width:88%"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SERIES EXAM ================= -->
+
+<section class="dashboard-grid">
+
+<div class="card">
+
+<div class="card-header">
+
+<h2>Series Examination</h2>
+
+</div>
+
+<table class="marks-table">
+
+<tr>
+
+<th>Subject</th>
+
+<th>Series 1</th>
+
+<th>Series 2</th>
+
+</tr>
+
+<tr>
+
+<td>Artificial Intelligence</td>
+
+<td>86</td>
+
+<td>92</td>
+
+</tr>
+
+<tr>
+
+<td>Cloud Computing</td>
+
+<td>91</td>
+
+<td>94</td>
+
+</tr>
+
+<tr>
+
+<td>Industrial Safety</td>
+
+<td>88</td>
+
+<td>93</td>
+
+</tr>
+
+<tr>
+
+<td>Seminar</td>
+
+<td>95</td>
+
+<td>97</td>
+
+</tr>
+
+<tr>
+
+<td>Major Project</td>
+
+<td>92</td>
+
+<td>96</td>
+
+</tr>
+
+<tr>
+
+<td>IoT & Applications</td>
+
+<td>84</td>
+
+<td>89</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<!-- PERFORMANCE TREND -->
+
+<div class="card chart-card">
+
+<div class="card-header">
+
+<h2>SGPA Trend</h2>
+
+</div>
+
+<canvas id="trendChart"></canvas>
+
+</div>
+
+</section>
+
+<!-- ================= SUBJECT RADAR ================= -->
+
+<section class="dashboard-grid">
+
+<div class="card chart-card">
+
+<div class="card-header">
+
+<h2>Subject Performance</h2>
+
+</div>
+
+<canvas id="radarChart"></canvas>
+
+</div>
+
+<!-- ACHIEVEMENTS -->
+
+<div class="card">
+
+<div class="card-header">
+
+<h2>Achievements</h2>
+
+</div>
+
+<div class="achievement">
+
+<h3>🏆 Best Semester</h3>
+
+<p>Semester 5 • SGPA 8.42</p>
+
+</div>
+
+<div class="achievement">
+
+<h3>⭐ Consistent Performer</h3>
+
+<p>Maintained CGPA above 8.0</p>
+
+</div>
+
+<div class="achievement">
+
+<h3>🎯 Assessment Excellence</h3>
+
+<p>Average Internal Score : 86%</p>
+
+</div>
+
+<div class="achievement">
+
+<h3>📚 Credits Earned</h3>
+
+<p>126 / 160 Credits Completed</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 KTU Student Portal • Academic Results Dashboard
+
+</footer>
+
+<script src="results.js"></script>
+
+</body>
+
+</html>

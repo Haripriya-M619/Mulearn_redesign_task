@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Timetable | KTU Student Portal</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="timetable.css">
+
+</head>
+
+<body>
+
+<!-- Background -->
+
+<div class="aurora">
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+<div class="blob b3"></div>
+</div>
+
+<div class="container">
+
+<!-- HEADER -->
+
+<header>
+
+<div class="header-left">
+
+<a href="dashboard.html" class="back-btn">← Back</a>
+
+<div>
+
+<h2>Class Timetable</h2>
+
+<p>Real-time schedule and weekly timetable</p>
+
+</div>
+
+</div>
+
+<div class="clock-card">
+
+<div id="liveDate"></div>
+
+<h2 id="liveClock">10:45 AM</h2>
+
+</div>
+
+</header>
+
+<!-- TODAY OVERVIEW -->
+
+<section class="overview">
+
+<div class="glass current-class">
+
+<span class="status">● LIVE NOW</span>
+
+<h3 id="currentSubject">
+
+Artificial Intelligence
+
+</h3>
+
+<p id="currentCode">
+
+CST415
+
+</p>
+
+<div class="time-box">
+
+<span id="currentTime">
+
+9:00 AM - 10:00 AM
+
+</span>
+
+</div>
+
+<div class="countdown">
+
+Remaining
+
+<strong id="remainingTime">
+
+18 mins
+
+</strong>
+
+</div>
+
+</div>
+
+<div class="glass next-class">
+
+<h3>Next Class</h3>
+
+<h2 id="nextSubject">
+
+Cloud Computing
+
+</h2>
+
+<p id="nextCode">
+
+CST463
+
+</p>
+
+<span id="nextTime">
+
+10:00 AM - 11:00 AM
+
+</span>
+
+</div>
+
+</section>
+
+<!-- TODAY TIMELINE -->
+
+<section class="glass">
+
+<div class="section-title">
+
+<h2>Today's Schedule</h2>
+
+</div>
+
+<div class="timeline">
+
+<div class="timeline-card live">
+
+<div class="period">
+
+P1
+
+</div>
+
+<div class="details">
+
+<h3>Artificial Intelligence</h3>
+
+<p>CST415</p>
+
+<span>9:00 AM - 10:00 AM</span>
+
+</div>
+
+<div class="indicator">
+
+Current
+
+</div>
+
+</div>
+
+<div class="timeline-card">
+
+<div class="period">
+
+P2
+
+</div>
+
+<div class="details">
+
+<h3>Cloud Computing</h3>
+
+<p>CST463</p>
+
+<span>10:00 AM - 11:00 AM</span>
+
+</div>
+
+</div>
+
+<div class="timeline-card">
+
+<div class="period">
+
+P3
+
+</div>
+
+<div class="details">
+
+<h3>IoT & Applications</h3>
+
+<p>CST467</p>
+
+<span>11:15 AM - 12:15 PM</span>
+
+</div>
+
+</div>
+
+<div class="timeline-card">
+
+<div class="period">
+
+P4
+
+</div>
+
+<div class="details">
+
+<h3>Industrial Safety Engineering</h3>
+
+<p>MCN401</p>
+
+<span>1:15 PM - 2:15 PM</span>
+
+</div>
+
+</div>
+
+<div class="timeline-card">
+
+<div class="period">
+
+P5
+
+</div>
+
+<div class="details">
+
+<h3>Seminar</h3>
+
+<p>CSP493</p>
+
+<span>2:15 PM - 3:15 PM</span>
+
+</div>
+
+</div>
+
+<div class="timeline-card">
+
+<div class="period">
+
+P6
+
+</div>
+
+<div class="details">
+
+<h3>Major Project</h3>
+
+<p>CSP497</p>
+
+<span>3:15 PM - 5:15 PM</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WEEKLY TIMETABLE -->
+
+<section class="glass">
+
+<div class="section-title">
+
+<h2>Weekly Timetable</h2>
+
+</div>
+
+<div class="table-wrapper">
+
+<table class="timetable">
+
+<tr>
+
+<th>Period</th>
+
+<th>Monday</th>
+
+<th>Tuesday</th>
+
+<th>Wednesday</th>
+
+<th>Thursday</th>
+
+<th>Friday</th>
+
+</tr>
+
+<tr>
+
+<td>P1</td>
+
+<td>
+
+<strong>CST415</strong><br>
+
+Artificial Intelligence<br>
+
+9:00-10:00
+
+</td>
+
+<td>
+
+<strong>CST463</strong><br>
+
+Cloud Computing<br>
+
+9:00-10:00
+
+</td>
+
+<td>
+
+<strong>CST467</strong><br>
+
+IoT & Applications<br>
+
+9:00-10:00
+
+</td>
+
+<td>
+
+<strong>CST415</strong><br>
+
+Artificial Intelligence<br>
+
+9:00-10:00
+
+</td>
+
+<td>
+
+<strong>CSP497</strong><br>
+
+Major Project<br>
+
+9:00-11:00
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>P2</td>
+
+<td>
+
+<strong>CST463</strong><br>
+
+Cloud Computing<br>
+
+10:00-11:00
+
+</td>
+
+<td>
+
+<strong>CST415</strong><br>
+
+Artificial Intelligence<br>
+
+10:00-11:00
+
+</td>
+
+<td>
+
+<strong>MCN401</strong><br>
+
+Industrial Safety<br>
+
+10:00-11:00
+
+</td>
+
+<td>
+
+<strong>CST467</strong><br>
+
+IoT & Applications<br>
+
+10:00-11:00
+
+</td>
+
+<td>
+
+<strong>CSP493</strong><br>
+
+Seminar<br>
+
+11:00-12:00
+
+</td>
+
+</tr>
+<tr>
+
+<td>P3</td>
+
+<td>
+
+<strong>CST467</strong><br>
+IoT & Applications<br>
+11:15-12:15
+
+</td>
+
+<td>
+
+<strong>CSP493</strong><br>
+Seminar<br>
+11:15-12:15
+
+</td>
+
+<td>
+
+<strong>CST463</strong><br>
+Cloud Computing<br>
+11:15-12:15
+
+</td>
+
+<td>
+
+<strong>CSP497</strong><br>
+Major Project<br>
+11:15-1:15
+
+</td>
+
+<td>
+
+<strong>CST415</strong><br>
+Artificial Intelligence<br>
+12:00-1:00
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>P4</td>
+
+<td>
+
+<strong>MCN401</strong><br>
+Industrial Safety<br>
+1:15-2:15
+
+</td>
+
+<td>
+
+<strong>CST467</strong><br>
+IoT & Applications<br>
+1:15-2:15
+
+</td>
+
+<td>
+
+<strong>CSP497</strong><br>
+Major Project<br>
+1:15-3:15
+
+</td>
+
+<td>
+
+<strong>CSP493</strong><br>
+Seminar<br>
+1:15-2:15
+
+</td>
+
+<td>
+
+<strong>CST463</strong><br>
+Cloud Computing<br>
+1:15-2:15
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>P5</td>
+
+<td>
+
+<strong>CSP493</strong><br>
+Seminar<br>
+2:15-3:15
+
+</td>
+
+<td>
+
+<strong>MCN401</strong><br>
+Industrial Safety<br>
+2:15-3:15
+
+</td>
+
+<td>
+
+<strong>CST415</strong><br>
+Artificial Intelligence<br>
+2:15-3:15
+
+</td>
+
+<td>
+
+<strong>CST463</strong><br>
+Cloud Computing<br>
+2:15-3:15
+
+</td>
+
+<td>
+
+<strong>CST467</strong><br>
+IoT & Applications<br>
+2:15-3:15
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>P6</td>
+
+<td>
+
+<strong>CSP497</strong><br>
+Major Project<br>
+3:15-5:15
+
+</td>
+
+<td>
+
+<strong>CSP497</strong><br>
+Major Project<br>
+3:15-5:15
+
+</td>
+
+<td>
+
+<strong>Library</strong><br>
+Self Study<br>
+3:15-4:15
+
+</td>
+
+<td>
+
+<strong>Major Project</strong><br>
+Review<br>
+3:15-5:15
+
+</td>
+
+<td>
+
+<strong>Project Discussion</strong><br>
+Faculty Meeting<br>
+3:15-4:15
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- ASSIGNMENT SUBMISSION -->
+
+<section class="glass">
+
+<div class="section-title">
+
+<h2>Assignment Submission</h2>
+
+</div>
+
+<div class="assignment-grid">
+
+<div class="assignment-card">
+
+<h3>Artificial Intelligence</h3>
+
+<p>Assignment 4</p>
+
+<span class="due">Due Tomorrow</span>
+
+<button>Upload</button>
+
+</div>
+
+<div class="assignment-card">
+
+<h3>Cloud Computing</h3>
+
+<p>Case Study</p>
+
+<span class="submitted">Submitted ✓</span>
+
+<button disabled>Submitted</button>
+
+</div>
+
+<div class="assignment-card">
+
+<h3>IoT & Applications</h3>
+
+<p>Mini Project</p>
+
+<span class="due">Due in 3 Days</span>
+
+<button>Upload</button>
+
+</div>
+
+<div class="assignment-card">
+
+<h3>Major Project</h3>
+
+<p>Weekly Progress Report</p>
+
+<span class="pending">Pending</span>
+
+<button>Upload</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TODAY'S STATISTICS -->
+
+<section class="stats">
+
+<div class="stat-card">
+
+<h2>6</h2>
+
+<p>Total Classes Today</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2>2</h2>
+
+<p>Completed</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2>4</h2>
+
+<p>Remaining</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2>94%</h2>
+
+<p>Attendance</p>
+
+</div>
+
+</section>
+
+<!-- QUICK ACTIONS -->
+
+<section class="glass">
+
+<div class="section-title">
+
+<h2>Quick Actions</h2>
+
+</div>
+
+<div class="actions">
+
+<button>📥 Download Timetable</button>
+
+<button>📄 Export PDF</button>
+
+<button>📅 Calendar View</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 KTU Student Portal • Timetable Dashboard
+
+</p>
+
+</footer>
+
+</div>
+
+<script src="timetable.js"></script>
+
+</body>
+
+</html>

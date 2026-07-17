@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Assignments | KTU Student Portal</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assignments.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="aurora">
+
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+<div class="blob b3"></div>
+
+</div>
+
+<div class="container">
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+
+<a href="dashboard.html" class="back-btn">
+
+← Back
+
+</a>
+
+<div>
+
+<h2>Assignments</h2>
+
+<p>Track your academic submissions</p>
+
+</div>
+
+</div>
+
+<div class="header-right">
+
+<div class="search">
+
+<input
+type="text"
+placeholder="Search assignment...">
+
+</div>
+
+<div class="profile">
+
+<img src="https://i.pravatar.cc/100?img=32">
+
+<div>
+
+<h4>Niveditha Saji</h4>
+
+<p>S6 CSE • Roll No. 43</p>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-left glass">
+
+<h1>
+
+Assignment
+
+<span>Dashboard</span>
+
+</h1>
+
+<p>
+
+Keep track of pending assignments, completed submissions, due dates and academic progress across all your enrolled courses.
+
+</p>
+
+<div class="hero-buttons">
+
+<button class="primary">
+
+View Calendar
+
+</button>
+
+<button class="secondary">
+
+Download Report
+
+</button>
+
+</div>
+
+</div>
+
+<div class="hero-right glass">
+
+<svg width="220" height="220">
+
+<circle
+class="track"
+cx="110"
+cy="110"
+r="80"/>
+
+<circle
+class="progress"
+cx="110"
+cy="110"
+r="80"/>
+
+<text
+x="110"
+y="118"
+text-anchor="middle">
+
+76%
+
+</text>
+
+</svg>
+
+<h3>Overall Completion</h3>
+
+<p>9 of 12 Assignments Completed</p>
+
+</div>
+
+</section>
+
+<!-- QUICK STATS -->
+
+<section class="stats">
+
+<div class="stat purple">
+
+<h2>12</h2>
+
+<p>Total Assigned</p>
+
+</div>
+
+<div class="stat green">
+
+<h2>9</h2>
+
+<p>Completed</p>
+
+</div>
+
+<div class="stat orange">
+
+<h2>2</h2>
+
+<p>Pending</p>
+
+</div>
+
+<div class="stat red">
+
+<h2>1</h2>
+
+<p>Overdue</p>
+
+</div>
+
+</section>
+
+<!-- MAIN GRID -->
+
+<section class="dashboard-grid">
+
+<!-- SUBJECT PROGRESS -->
+
+<div class="card">
+
+<div class="card-header">
+
+<h2>Subject Progress</h2>
+
+</div>
+
+<div class="subject-progress">
+
+<div class="subject">
+
+<div class="subject-head">
+
+<h4>Major Project</h4>
+
+<span>75%</span>
+
+</div>
+
+<div class="bar">
+
+<div class="fill purple-fill" style="width:75%"></div>
+
+</div>
+
+<p>3 / 4 Completed</p>
+
+</div>
+
+<div class="subject">
+
+<div class="subject-head">
+
+<h4>Artificial Intelligence</h4>
+
+<span>90%</span>
+
+</div>
+
+<div class="bar">
+
+<div class="fill blue-fill" style="width:90%"></div>
+
+</div>
+
+<p>9 / 10 Completed</p>
+
+</div>
+
+<div class="subject">
+
+<div class="subject-head">
+
+<h4>Cloud Computing</h4>
+
+<span>100%</span>
+
+</div>
+
+<div class="bar">
+
+<div class="fill green-fill" style="width:100%"></div>
+
+</div>
+
+<p>5 / 5 Completed</p>
+
+</div>
+<div class="subject">
+
+<div class="subject-head">
+
+<h4>Industrial Safety Engineering</h4>
+
+<span>80%</span>
+
+</div>
+
+<div class="bar">
+
+<div class="fill orange-fill" style="width:80%"></div>
+
+</div>
+
+<p>4 / 5 Completed</p>
+
+</div>
+
+<div class="subject">
+
+<div class="subject-head">
+
+<h4>Seminar</h4>
+
+<span>100%</span>
+
+</div>
+
+<div class="bar">
+
+<div class="fill green-fill" style="width:100%"></div>
+
+</div>
+
+<p>2 / 2 Completed</p>
+
+</div>
+
+<div class="subject">
+
+<div class="subject-head">
+
+<h4>IoT & Applications</h4>
+
+<span>65%</span>
+
+</div>
+
+<div class="bar">
+
+<div class="fill purple-fill" style="width:65%"></div>
+
+</div>
+
+<p>2 / 3 Completed</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ASSIGNMENT LIST -->
+
+<div class="card">
+
+<div class="card-header">
+
+<h2>Latest Assignments</h2>
+
+<a href="#">View All</a>
+
+</div>
+
+<div class="assignment-list">
+
+<div class="assignment completed">
+
+<div>
+
+<h3>Binary Search Tree Implementation</h3>
+
+<p>Data Structures</p>
+
+<small>Due : 22 July 2026</small>
+
+</div>
+
+<span class="badge green">Completed</span>
+
+</div>
+
+<div class="assignment pending">
+
+<div>
+
+<h3>LL(1) Parser Design</h3>
+
+<p>Compiler Design</p>
+
+<small>Due : 24 July 2026</small>
+
+</div>
+
+<span class="badge orange">Pending</span>
+
+</div>
+
+<div class="assignment overdue">
+
+<div>
+
+<h3>Normalization Case Study</h3>
+
+<p>DBMS</p>
+
+<small>Due : 18 July 2026</small>
+
+</div>
+
+<span class="badge red">Overdue</span>
+
+</div>
+
+<div class="assignment completed">
+
+<div>
+
+<h3>Cloud Deployment Report</h3>
+
+<p>Cloud Computing</p>
+
+<small>Due : 26 July 2026</small>
+
+</div>
+
+<span class="badge green">Completed</span>
+
+</div>
+
+<div class="assignment pending">
+
+<div>
+
+<h3>Smart Home IoT Prototype</h3>
+
+<p>IoT & Applications</p>
+
+<small>Due : 30 July 2026</small>
+
+</div>
+
+<span class="badge orange">Pending</span>
+
+</div>
+
+<div class="assignment completed">
+
+<div>
+
+<h3>Major Project Proposal</h3>
+
+<p>Major Project</p>
+
+<small>Due : 28 July 2026</small>
+
+</div>
+
+<span class="badge green">Completed</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 KTU Student Portal • Assignment Dashboard
+
+</footer>
+
+<script src="assignment.js"></script>
+
+</body>
+
+</html>
